@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/darkBackground"
+    android:padding="16dp">
+
+    <!-- Imagen de perfil -->
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_profile"
+        android:contentDescription="Profile Image"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_background" />
+
+    <!-- Nombre del usuario -->
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/profile_image"
+        android:layout_marginStart="16dp"
+        android:text="José Fabre"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <!-- Número de teléfono -->
+    <TextView
+        android:id="@+id/user_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_toEndOf="@id/profile_image"
+        android:layout_marginStart="16dp"
+        android:text="+593 989734009"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <!-- Botón de tema -->
+    <ImageView
+        android:id="@+id/theme_button"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_theme"
+        android:contentDescription="Theme Button" />
+</RelativeLayout>
