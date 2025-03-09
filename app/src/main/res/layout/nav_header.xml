@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="200dp"
-    android:background="@color/darkBackground"
+    android:background="@android:color/system_accent1_500"
     android:padding="16dp">
 
     <!-- Imagen de perfil -->
@@ -11,22 +11,23 @@
         android:id="@+id/profile_image"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:src="@drawable/ic_profile"
+        android:background="@drawable/circle_background"
         android:contentDescription="Profile Image"
         android:scaleType="centerCrop"
-        android:background="@drawable/circle_background" />
+        android:src="@drawable/ic_profile"
+        app:tint="@color/white" />
 
     <!-- Nombre del usuario -->
     <TextView
         android:id="@+id/user_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/profile_image"
         android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/profile_image"
         android:text="José Fabre"
         android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <!-- Número de teléfono -->
     <TextView
@@ -34,9 +35,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/user_name"
-        android:layout_toEndOf="@id/profile_image"
         android:layout_marginStart="16dp"
-        android:text="+593 989734009"
+        android:layout_toEndOf="@id/profile_image"
+        android:text="+593 989 734 4009"
         android:textColor="@android:color/white"
         android:textSize="14sp" />
 
@@ -47,6 +48,6 @@
         android:layout_height="32dp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="8dp"
-        android:src="@drawable/ic_theme"
-        android:contentDescription="Theme Button" />
+        android:contentDescription="Theme Button"
+        android:src="@drawable/ic_theme" />
 </RelativeLayout>

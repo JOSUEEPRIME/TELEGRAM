@@ -4,36 +4,47 @@
     <group android:checkableBehavior="none">
         <item
             android:id="@+id/nav_profile"
+            android:enabled="true"
             android:icon="@drawable/ic_profile"
+            android:iconTint="#FFFFFF"
+            android:textColor="@android:color/white"
             android:title="Mi perfil" />
         <item
             android:id="@+id/nav_new_group"
             android:icon="@drawable/ic_group"
+            android:iconTint="#2E2929"
+            android:textColor="@android:color/white"
             android:title="Nuevo grupo" />
         <item
             android:id="@+id/nav_contacts"
             android:icon="@drawable/ic_contacts"
+            android:iconTint="#2E2929"
             android:title="Contactos" />
         <item
             android:id="@+id/nav_calls"
             android:icon="@drawable/ic_call"
+            android:iconTint="#2E2929"
             android:title="Llamadas" />
         <item
             android:id="@+id/nav_saved_messages"
             android:icon="@drawable/ic_bookmark"
+            android:iconTint="#2E2929"
             android:title="Mensajes guardados" />
         <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/ic_settings"
+            android:iconTint="#2E2929"
             android:title="Ajustes" />
     </group>
 
     <item
         android:id="@+id/nav_invite_friends"
         android:icon="@drawable/ic_invite"
+        android:iconTint="#2E2929"
         android:title="Invitar amigos" />
     <item
         android:id="@+id/nav_learn"
         android:icon="@drawable/ic_help"
+        android:iconTint="#2E2929"
         android:title="Aprende sobre Telegram" />
 </menu>

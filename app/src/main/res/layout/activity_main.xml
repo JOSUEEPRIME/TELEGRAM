@@ -19,7 +19,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
+            android:background="@android:color/system_accent1_800"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:title="Telegram"
             app:titleTextColor="@android:color/white" />
@@ -39,5 +39,8 @@
         android:layout_gravity="start"
         android:background="@color/darkBackground"
         app:headerLayout="@layout/nav_header"
-        app:menu="@menu/nav_menu" />
+        app:menu="@menu/nav_menu"
+        app:itemTextColor="#FFFFFF"
+        app:itemIconTint="@color/white"/>
+
 </androidx.drawerlayout.widget.DrawerLayout>
